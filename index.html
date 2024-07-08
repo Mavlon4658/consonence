@@ -14,14 +14,14 @@
     <!-- Header -->
     <div class="header">
         <div class="d-flex align-items-center justify-content-between header__container">
-            <a href="#" class="d-flex align-items-center header__logo">
+            <a href="#" class="d-none d-lg-flex align-items-center header__logo">
                 <img src="./images/logo.svg" alt="">
                 <span class="d-flex flex-column">
                     <span class="header__logo_name">СОЗВУЧИЕ</span>
                     <span class="header__logo_description">Центр развития личности</span>
                 </span>
             </a>
-            <ul class="d-flex align-items-center header__navs">
+            <ul class="d-none d-lg-flex align-items-center header__navs">
                 <li>
                     <a href="#">Главная</a>
                 </li>
@@ -35,10 +35,47 @@
                     <a href="#">Контакты</a>
                 </li>
             </ul>
-            <a href="#" class="btn_lightgreen">Связаться</a>
+            <a href="#" class="d-none d-lg-flex btn_lightgreen">Связаться</a>
+            <button class="header__bars d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <img src="./images/bars.svg" alt="">
+            </button>
         </div>
     </div>
     <!-- Header end -->
+
+    <!-- Mobile menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="d-flex align-items-center header__logo">
+                <img src="./images/logo.svg" alt="">
+                <span class="d-flex flex-column">
+                    <span class="header__logo_name">СОЗВУЧИЕ</span>
+                    <span class="header__logo_description">Центр развития личности</span>
+                </span>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Наши услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <!-- Mobile menu end -->
 
     <main>
 
@@ -48,8 +85,10 @@
             <div class="main_container home__container">
                 <h1 class="home__title">"Личностью не рождаются, личностью <span>становятся»</span>.<br>А.Н. Леонтьев</h1>
                 <p class="home__subtitle">Свяжитесь с нами, чтобы - узнать подробнее</p>
-                <a href="#" class="btn_lightgreen">Связаться</a>
-                <div class="d-flex align-items-center our_clients">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="#" class="btn_lightgreen">Связаться</a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center our_clients">
                     <div class="d-flex align-items-center justify-content-end our_clients__imgs">
                         <img src="./images/our-clients-1.png" alt="">
                         <img src="./images/our-clients-2.png" alt="">
