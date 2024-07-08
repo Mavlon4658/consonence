@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input, textarea {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0;
+  font-family: "Inter", sans-serif;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100svh;
+}
+
+ul, ol, dl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main_container {
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+.btn_lightgreen {
+  font-size: 16px;
+  line-height: auto;
+  color: #4F4F4F;
+  padding: 19px 26px 19.7px;
+  background: #A8FCE0;
+  border-radius: 40px;
+}
+.btn_gradient {
+  font-size: 26px;
+  line-height: 100%;
+  color: #000;
+  padding: 20px 40px;
+  border-radius: 67px;
+  background: linear-gradient(180deg, rgba(75, 255, 190, 0.48) 0%, rgba(82, 75, 255, 0.48) 100%);
+  border: 1px solid #fff;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 35px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+.header__container {
+  max-width: 1833px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1913px) {
+  .header__container {
+    max-width: calc(100% - 80px);
+  }
+}
+.header__logo {
+  gap: 10px;
+}
+.header__logo_name {
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.header__logo_description {
+  font-size: 13.32px;
+  font-weight: 500;
+  line-height: 11.7px;
+  color: #8D8E92;
+}
+.header__navs {
+  gap: 45px;
+}
+.header__navs a {
+  color: #303030;
+  font-size: 18px;
+  line-height: auto;
+}
+
+.home {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #ECECEC;
+}
+.home__bg {
+  min-width: 2057px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+.home__container {
+  padding: 143px 0 200px;
+  position: relative;
+}
+.home__title {
+  max-width: 667px;
+  font-size: 40px;
+  line-height: auto;
+  font-weight: 400;
+  color: #303030;
+  margin-bottom: 32px;
+}
+.home__title span {
+  color: #A9B5F9;
+}
+.home__subtitle {
+  margin-bottom: 64px;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: -2%;
+  color: rgba(0, 0, 0, 0.45);
+}
+.home .btn_lightgreen {
+  margin-left: -9px;
+  margin-bottom: 146px;
+}
+.home .our_clients {
+  gap: 18px;
+}
+.home .our_clients__imgs {
+  position: relative;
+  width: 125px;
+}
+.home .our_clients__imgs img {
+  position: absolute;
+  min-width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #fff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .our_clients__imgs img:nth-child(2) {
+  left: 35.46px;
+}
+.home .our_clients__imgs span {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #A9B5F9;
+  border: 2px solid #fff;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12.75px;
+  line-height: 124.5%;
+  line-height: 3%;
+  color: #fff;
+}
+.home .our_clients p {
+  color: #303030;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 1%;
+}
+.home__links a {
+  position: absolute;
+}
+.home__links a:nth-child(1) {
+  top: 210px;
+  right: 62px;
+}
+.home__links a:nth-child(2) {
+  top: 345px;
+  right: 330px;
+}
+.home__links a:nth-child(3) {
+  top: 460px;
+  right: 40px;
+}
+.home__links a:nth-child(4) {
+  top: 553px;
+  right: 358px;
+}/*# sourceMappingURL=style.css.map */
