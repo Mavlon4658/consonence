@@ -10,107 +10,350 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <div class="wrapper">
+
+
+        <!-- Header -->
+        <div class="header">
+            <div class="d-flex align-items-center justify-content-between header__container">
+                <a href="#" class="d-none d-lg-flex align-items-center header__logo">
+                    <img src="./images/logo.svg" alt="">
+                    <span class="d-flex flex-column">
+                        <span class="header__logo_name">СОЗВУЧИЕ</span>
+                        <span class="header__logo_description">Центр развития личности</span>
+                    </span>
+                </a>
+                <ul class="d-none d-lg-flex align-items-center header__navs">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <a href="#" class="d-none d-lg-flex btn_lightgreen">Связаться</a>
+                <button class="header__bars d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="./images/bars.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Header end -->
     
-    <!-- Header -->
-    <div class="header">
-        <div class="d-flex align-items-center justify-content-between header__container">
-            <a href="#" class="d-none d-lg-flex align-items-center header__logo">
-                <img src="./images/logo.svg" alt="">
-                <span class="d-flex flex-column">
-                    <span class="header__logo_name">СОЗВУЧИЕ</span>
-                    <span class="header__logo_description">Центр развития личности</span>
-                </span>
-            </a>
-            <ul class="d-none d-lg-flex align-items-center header__navs">
-                <li>
-                    <a href="#">Главная</a>
+        <!-- Mobile menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="d-flex align-items-center header__logo">
+                    <img src="./images/logo.svg" alt="">
+                    <span class="d-flex flex-column">
+                        <span class="header__logo_name">СОЗВУЧИЕ</span>
+                        <span class="header__logo_description">Центр развития личности</span>
+                    </span>
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li>
-                    <a href="#">Наши услуги</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
                 </li>
-                <li>
-                    <a href="#">Отзывы</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Наши услуги</a>
                 </li>
-                <li>
-                    <a href="#">Контакты</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
                 </li>
             </ul>
-            <a href="#" class="d-none d-lg-flex btn_lightgreen">Связаться</a>
-            <button class="header__bars d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <img src="./images/bars.svg" alt="">
-            </button>
+            </div>
         </div>
-    </div>
-    <!-- Header end -->
-
-    <!-- Mobile menu -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-            <a href="#" class="d-flex align-items-center header__logo">
-                <img src="./images/logo.svg" alt="">
-                <span class="d-flex flex-column">
-                    <span class="header__logo_name">СОЗВУЧИЕ</span>
-                    <span class="header__logo_description">Центр развития личности</span>
-                </span>
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Наши услуги</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Отзывы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
-            </li>
-        </ul>
-        </div>
-    </div>
-    <!-- Mobile menu end -->
-
-    <main>
-
-        <!-- Home -->
-        <section class="home">
-            <img src="./images/home-bg.png" class="home__bg" alt="">
-            <div class="main_container home__container">
-                <h1 class="home__title">"Личностью не рождаются, личностью <span>становятся»</span>.<br>А.Н. Леонтьев</h1>
-                <p class="home__subtitle">Свяжитесь с нами, чтобы - узнать подробнее</p>
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                    <a href="#" class="btn_lightgreen">Связаться</a>
-                </div>
-                <div class="d-none d-lg-flex align-items-center our_clients">
-                    <div class="d-flex align-items-center justify-content-end our_clients__imgs">
-                        <img src="./images/our-clients-1.png" alt="">
-                        <img src="./images/our-clients-2.png" alt="">
-                        <span>+48</span>
+        <!-- Mobile menu end -->
+    
+        <main>
+    
+            <!-- Home -->
+            <section class="home">
+                <img src="./images/home-bg.png" class="home__bg" alt="">
+                <div class="main_container home__container">
+                    <h1 class="main_title home__title">"Личностью не рождаются, личностью <span>становятся»</span>.<br>А.Н. Леонтьев</h1>
+                    <p class="home__subtitle">Свяжитесь с нами, чтобы - узнать подробнее</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#" class="btn_lightgreen">Связаться</a>
                     </div>
-                    <p>Наши довольные клиенты</p>
+                    <div class="d-none d-lg-flex align-items-center our_clients">
+                        <div class="d-flex align-items-center justify-content-end our_clients__imgs">
+                            <img src="./images/our-clients-1.png" alt="">
+                            <img src="./images/our-clients-2.png" alt="">
+                            <span>+48</span>
+                        </div>
+                        <p>Наши довольные клиенты</p>
+                    </div>
+                    <div class="home__links d">
+                        <a href="#" class="btn_gradient">Общее развитие</a>
+                        <a href="#" class="btn_gradient">ПОДГОТОВКА К ШКОЛЕ</a>
+                        <a href="#" class="btn_gradient">Логопедия</a>
+                        <a href="#" class="btn_gradient">Психология</a>
+                    </div>
                 </div>
-                <div class="home__links d">
-                    <a href="#" class="btn_gradient">Общее развитие</a>
-                    <a href="#" class="btn_gradient">ПОДГОТОВКА К ШКОЛЕ</a>
-                    <a href="#" class="btn_gradient">Логопедия</a>
-                    <a href="#" class="btn_gradient">Психология</a>
+            </section>
+            <!-- Home end -->
+    
+            <!-- Chance -->
+            <section class="chance">
+                <div class="chance__bg"></div>
+                <div class="main_container chance__conatiner">
+                    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between chance__head">
+                        <h2 class="main_title">Путь к <span>безграничным</span> возможностям для вас и ваших детей</h2>
+                        <a href="#" class="d-none d-lg-flex btn_lightgreen">Позвонить</a>
+                    </div>
+                    <ul class="d-flex flex-wrap align-items-stretch chance__card">
+                        <li>
+                            <img src="./images/chance-icon-1.svg" alt="">
+                            <h3>Бережно</h3>
+                            <p>Атмосфера тепла и заботы к каждому клиенту создаёт уникальный и приятный опыт.</p>
+                        </li>
+                        <li>
+                            <img src="./images/chance-icon-2.svg" alt="">
+                            <h3>Профессионально</h3>
+                            <p>Высококвалифицированные специалисты ориентированные на безупречное качество предоставляемых услуг</p>
+                        </li>
+                        <li>
+                            <img src="./images/chance-icon-3.svg" alt="">
+                            <h3>Системный взгляд</h3>
+                            <p>Комплексное видение проблематики, прицельное воздействие на причину, а не на следствие</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Chance end -->
+
+            <!-- About -->
+            <section class="about">
+                <div class="main_container about__container">
+                    <h2 class="main_title">Дефектолог повысит адаптивные способности вашего ребенка</h2>
+                    <div class="about__icon">
+                        <img src="./images/about-icon.gif" alt="">
+                        <a href="#">Что мы <br> умеем?</a>
+                    </div>
+                    <ul class="about__list">
+                        <li>
+                            <a href="#">Развитие сенсомоторных и сенсорных навыков</a>
+                        </li>
+                        <li>
+                            <a href="#">Формирование и развитие базовых навыков у детей с РАС</a>
+                        </li>
+                        <li>
+                            <a href="#">Расширение представлений об окружающей действительности</a>
+                        </li>
+                        <li>
+                            <a href="#">Формирование ведущего вида деятельности и произвольной сферы</a>
+                        </li>
+                        <li>
+                            <a href="#">Формирование познавательно-речевого развития (мышление и речь, восприятие, внимание, память)</a>
+                        </li>
+                    </ul>
+                    <div class="about__accordion">
+                        <button class="about__accordion_btn">
+                            <span>Полный список</span>
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 6L0 0L12 0L6 6Z" fill="#303030"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#">Развитие сенсомоторных и сенсорных навыков</a>
+                            </li>
+                            <li>
+                                <a href="#">Формирование и развитие базовых навыков у детей с РАС</a>
+                            </li>
+                            <li>
+                                <a href="#">Расширение представлений об окружающей действительности</a>
+                            </li>
+                            <li>
+                                <a href="#">Формирование ведущего вида деятельности и произвольной сферы</a>
+                            </li>
+                            <li>
+                                <a href="#">Формирование познавательно-речевого развития (мышление и речь, восприятие, внимание, память)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- About end -->
+
+            <!-- Help -->
+            <section class="help">
+                <div class="help__bg"></div>
+                <div class="d-flex align-items-center justify-content-center main_container help__container">
+                    <img src="./images/help-card.png" class="help__left" alt="">
+                    <div class="help__content">
+                        <h2>Широкий спектр психологической помощи детям и взрослым</h2>
+                        <img src="./images/help-card.png" alt="">
+                        <ul class="d-flex flex-column">
+                            <li>Срочная психологическая помощь</li>
+                            <li>Индивидуальная терапия</li>
+                            <li>Психологическое консультирование</li>
+                            <li>Детско-родительские отношения</li>
+                            <li>Возрастно-психологическая консультация</li>
+                            <li>Групповая терапия</li>
+                            <li>Детский психолог</li>
+                            <li>Подростковый психолог</li>
+                            <li>Нейропсихолог для детей</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Help end -->
+
+            <!-- Therapy -->
+            <section class="therapy">
+                <div class="d-flex align-items-start justify-content-between main_container therapy__container">
+                    <div class="therapy__content">
+                        <h2 class="main_title">
+                            Логопедия для детей <span>от 2-х лет</span>
+                        </h2>
+                        <p>Ваш ребенок никак не заговорит или перестал говорить? Поможем выявить причины, которые способствуют нарушению речи и своевременно произвести коррекцию.</p>
+                        <div class="d-flex align-items-end therapy__content_foot">
+                            <div class="d-flex flex-column therapy__content_foot__text">
+                                <span>45 мин</span>
+                                <h3>от 2000₽</h3>
+                                <span>Консультация</span>
+                            </div>
+                            <a href="#" class="btn_lightgreen">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="therapy__card">
+                        <img src="./images/therapy-card.png" alt="">
+                    </div>
+                    <div class="d-flex flex-column therapy__accordions">
+                        <div class="main_accordion">
+                            <div class="main_accordion__btn">
+                                <span>Диагностика</span>
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6L0 0H12L6 6Z" fill="#303030"/>
+                                </svg>
+                            </div>
+                            <div class="main_accordion__body">
+                                <ul>
+                                    <li>Идеальная формула команды - все специалисты в одном месте</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main_accordion">
+                            <div class="main_accordion__btn">
+                                <span>С какими нарушениями <br> мы работаем?</span>
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6L0 0H12L6 6Z" fill="#303030"/>
+                                </svg>
+                            </div>
+                            <div class="main_accordion__body">
+                                <ul>
+                                    <li>ФФН - фонетико-фонематическое недоразвитие</li>
+                                    <li>ОНР - общее недоразвитие речи</li>
+                                    <li>Алалия</li>
+                                    <li>Дизартрия</li>
+                                    <li>Дислалия</li>
+                                    <li>Дисграфия</li>
+                                    <li>Дислексия</li>
+                                    <li>Диспраксия</li>
+                                    <li>МФН миофункциональные нарушения</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main_accordion">
+                            <div class="main_accordion__btn">
+                                <span>Направления работы</span>
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6L0 0H12L6 6Z" fill="#303030"/>
+                                </svg>
+                            </div>
+                            <div class="main_accordion__body">
+                                <ul>
+                                    <li>Запуск речи, развитие связной речи, звукопроизношение, развитие фонематического восприятия, развитие навыка письма и чтения, логомассаж</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Therapy end -->
+
+            <!-- About us -->
+            <div class="about-us">
+                <div class="main_container about-us__container">
+                    <h2 class="main_title">Что о нас говорят?</h2>
+                    <ul class="d-flex about-us__card">
+                        <li class="about-us__card_item">
+                            <div class="about-us__card_content">
+                                <h4>Услуга - “Профориентация”</h4>
+                                <h3 class="d-flex align-items-center">
+                                    <span>01</span>
+                                    <span>Анонимный</span>
+                                </h3>
+                                <ul>
+                                    <li>Я пришла на профориентацию с проблемой того, что не знала куда идти/двигаться дальше, не видела свободы и не знала своих способностей. Меня беспокоило будущее и своя неопределённость.</li>
+                                    <li>В рамках программы я узнавала свои сильные и слабые стороны, свои предпочтения и желания. Много узнала о себе и о своей личности.</li>
+                                    <li>После прохождения я почувствовала облегчение и свободу, поняла на кого хочу поступать.</li>
+                                    <li>Самым важным для меня было сложить картину того какой я человек  и какая деятельность будет мне ближе всего.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="about-us__card_item">
+                            <div class="about-us__card_content">
+                                <h4>Услуга - “Профориентация”</h4>
+                                <h3 class="d-flex align-items-center">
+                                    <span>01</span>
+                                    <span>Анонимный</span>
+                                </h3>
+                                <ul>
+                                    <li>Я пришла на профориентацию с проблемой того, что не знала куда идти/двигаться дальше, не видела свободы и не знала своих способностей. Меня беспокоило будущее и своя неопределённость.</li>
+                                    <li>В рамках программы я узнавала свои сильные и слабые стороны, свои предпочтения и желания. Много узнала о себе и о своей личности.</li>
+                                    <li>После прохождения я почувствовала облегчение и свободу, поняла на кого хочу поступать.</li>
+                                    <li>Самым важным для меня было сложить картину того какой я человек  и какая деятельность будет мне ближе всего.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="about-us__card_item">
+                            <div class="about-us__card_content">
+                                <h4>Услуга - “Профориентация”</h4>
+                                <h3 class="d-flex align-items-center">
+                                    <span>01</span>
+                                    <span>Анонимный</span>
+                                </h3>
+                                <ul>
+                                    <li>Я пришла на профориентацию с проблемой того, что не знала куда идти/двигаться дальше, не видела свободы и не знала своих способностей. Меня беспокоило будущее и своя неопределённость.</li>
+                                    <li>В рамках программы я узнавала свои сильные и слабые стороны, свои предпочтения и желания. Много узнала о себе и о своей личности.</li>
+                                    <li>После прохождения я почувствовала облегчение и свободу, поняла на кого хочу поступать.</li>
+                                    <li>Самым важным для меня было сложить картину того какой я человек  и какая деятельность будет мне ближе всего.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- Home end -->
+            <!-- About us end -->
+    
+        </main>
+    
+        <!-- Footer -->
+        <!-- Footer end -->
 
-    </main>
 
-    <!-- Footer -->
-    <!-- Footer end -->
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
