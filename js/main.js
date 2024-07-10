@@ -20,6 +20,7 @@ items.forEach((item) => {
 let aboutUsSwp = new Swiper('.about-us .swiper', {
     slidesPerView: 1,
     spaceBetween: 29,
+    loop: true,
     breakpoints: {
         992: {
             slidesPerView: 3,
@@ -36,6 +37,7 @@ let treanings = document.querySelectorAll('.treaning');
 treanings.forEach(treaning => {
     let swp = new Swiper(treaning.querySelector('.swiper'), {
         slidesPerView: 1,
+        loop: true,
         pagination: {
             el: treaning.querySelector('.swiper_pagination'),
             clickable: true,
