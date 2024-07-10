@@ -16,3 +16,17 @@ items.forEach((item) => {
         content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
     });
 });
+
+let aboutUsSwp = new Swiper('.about-us .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 29,
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+        }
+    },
+    pagination: {
+        el: '.about-us .swiper_pagination',
+        clickable: true,
+    }
+})
