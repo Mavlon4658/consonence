@@ -49,6 +49,14 @@ treanings.forEach(treaning => {
     })
 })
 
-document.querySelector('.to_top').onclick = () => {
-    window.scrollTo(0, 0);
-}
+let links = document.querySelectorAll('.mobile__menu ul li a');
+
+links.forEach(el => {
+    let id = el.getAttribute('data-id');
+    el.onclick = () => {
+        document.querySelector('.mobile__menu').classList.remove('show');
+        document.querySelector('.mobile__menu').classList.add('hide');
+        document.querySelector('.offcanvas-backdrop').classList.remove('show');
+        document.querySelector('.offcanvas-backdrop').classList.add('hide');
+    }
+})
