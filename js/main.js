@@ -46,3 +46,7 @@ treanings.forEach(treaning => {
         }
     })
 })
+
+document.querySelector('.to_top').onclick = () => {
+    window.scrollTo(0, 0);
+}

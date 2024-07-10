@@ -1776,3 +1776,150 @@ body {
     }
 }
 // Magic end
+
+// Contact
+.contact {
+    padding: 100px 0 324px;
+
+    @include media(992) {
+        padding: 0 0 80px;
+    }
+
+    &__container {
+        gap: 72px;
+
+        @include media(1300) {
+            gap: 30px;
+        }
+    }
+
+    &__form {
+        h2 {
+            margin-bottom: 22px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 180%;
+            margin-bottom: 46px;
+
+            @include media(992) {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        .form {
+            &_group {
+                gap: 24px;
+                margin-bottom: 28px;
+            }
+
+            &_inp {
+                position: relative;
+                width: calc(50% - 12px);
+
+                @include media(992) {
+                    width: 100%;
+                }
+    
+                label {
+                    font-size: 17px;
+                    line-height: 180%;
+                    letter-spacing: -2%;
+                    background: #fff;
+                    padding: 0 7.35px;
+                    position: absolute;
+                    top: -13.51px;
+                    left: 16.9px;
+    
+                    span {
+                        color: #A9B5F9;
+                    }
+                }
+    
+                input, textarea {
+                    width: 100%;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 8.82px;
+                    font-size: 14px;
+                    line-height: 124.5%;
+                    letter-spacing: 3%;
+                    padding: 21px 24.5px;
+                    color: #303030;
+    
+                    &::placeholder {
+                        color:rgba(0, 0, 0, 0.45);
+                    }
+    
+                    &:focus {
+                        border-color: #303030;
+                    }
+                }
+
+                &.text {
+                    width: 100%;
+                    margin-bottom: 22px;
+
+                    textarea {
+                        height: 106px;
+                        resize: none;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .btn_lightgreen {
+            @include media(992) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__networks {
+        gap: 109px;
+        width: 520px;
+        flex-shrink: 0;
+
+        @include media(1300) {
+            width: 400px;
+            gap: 30px;
+        }
+
+        a {
+            font-size: 43px;
+            line-height: 100%;
+
+
+            @include media(992) {
+                font-size: 24px;
+                display: block;
+            }
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 180%;
+            color: rgba(0, 0, 0, 0.45);
+        }
+    }
+}
+// Contact end
+
+// footer
+.footer {
+    padding-bottom: 63px;
+
+    @include media(992) {
+        padding-bottom: 30px;
+    }
+    
+    &__container {
+        gap: 30px;
+    }
+}
+// footer end
