@@ -30,3 +30,19 @@ let aboutUsSwp = new Swiper('.about-us .swiper', {
         clickable: true,
     }
 })
+
+let treanings = document.querySelectorAll('.treaning');
+
+treanings.forEach(treaning => {
+    let swp = new Swiper(treaning.querySelector('.swiper'), {
+        slidesPerView: 1,
+        pagination: {
+            el: treaning.querySelector('.swiper_pagination'),
+            clickable: true,
+        },
+        navigation: {
+            nextEl: treaning.querySelector('.swp_next_btn'),
+            prevEl: treaning.querySelector('.swp_prev_btn'),
+        }
+    })
+})
